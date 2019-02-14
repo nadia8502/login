@@ -14,6 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+//Route::get('/user1', function(){
+//	$user = App\user1::all();
+//	return $user;
+//});
 //Route::get('auth/login', function() {
 //	return view('auth.login');
 //});
@@ -23,10 +27,10 @@ Route::get('/', function () {
 //});
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-//Route::get('login', 'LoginController@login');
-//Route::post('login', 'LoginController@login');
-//Route::post('/logout', 'LoginController@logout');
+Route::get('/', 'HomeController@index');
+//Route::get('/login', 'LoginController@login');
+//Route::post('/login', 'LoginController@login');
+//Route::post('logout', 'LoginController@logout');
 //Route::get('register', 'RegisterController@showResetForm');
 //Route::post('register', 'RegisterController@register');
 //Route::post('password/email', 'ForgotPasswordController@sendResetLinkEmail');

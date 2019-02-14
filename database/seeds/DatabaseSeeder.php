@@ -52,7 +52,6 @@ private $arraySocios = array(
 				'email' => 'gato@gmail.com', 
 				'password' => 'gato',
 				'address' => 'C/San gato 3', 
-				'admin' => false, 
 				'user' => 'gato'
 				
 			),
@@ -62,7 +61,6 @@ private $arraySocios = array(
 				'email' => 'jose@gmail.com', 
 				'password' => 'admin',
 				'address' => 'C/San Carlos 2', 
-				'admin' => true, 
 				'user' => 'admin'
 				
 			)
@@ -99,7 +97,6 @@ private $arraySocios = array(
     		$p->subname = $users['subname']; 
     		$p->email = $users['email']; 
     		$p->address = $users['address']; 
-    		$p->admin = $users['admin']; 
     		$p->user = $users['user']; 
     		$p->password = bcrypt($users['password']); 
     		$p->save();
